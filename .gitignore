@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/linux,c++,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,c++,visualstudiocode
 
+### snakegame executable file ###
+snakegame
+
 ### C++ ###
 # Prerequisites
 *.d

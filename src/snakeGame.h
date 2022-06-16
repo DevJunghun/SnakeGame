@@ -1,37 +1,58 @@
 #include <iostream>
 #include <vector>
-#include <ncurses.h>
+#include "vector.h"
+#include <string.h>
 #include <cstdlib>
-
-#ifndef SNAKEGAME_H
-#define SNAKEGAME_H
-
+#include "position.h"
 using namespace std;
 
-struct Point {
-    int x, y;
-    Point() : x(0), y(0) { };
-    Point(int x, int y) : x(x), y(y) { };
-};
 
-class snakeGame {
+const int snakeMaxLen=6;
+
+class Snake
+{
 private:
-    char snakeBody, wallBody, direction;
-    int maxwidth, maxheight, snakeSize, speed;
-
-    vector<Point> snake;   
-    vector<Point> wall;
-
-    void InitGameWindow();
-    void DrawWindow();
-    void DrawSnake();
-    void MoveSnake();
-    bool GameOver();
-
+	vector<Vector> snake_vec;
+	Vector direction;
+	const int row, col;
+	vector<Vector> wall;
+	Vector gate[2];
+	bool end;
+	int speed;
+	char* map_list;
+	int gateCnt;
+	int level;
+	int snakeLen;
 public:
-    snakeGame();
-    ~snakeGame();
-    void StartGame();
-};
+	Snake(int r, int c);
+	~Snake();
+	int growthItem=0;
+	int poisonItem=0;
 
-#endif
+	void setDirection(int d);
+	void moveSnakeHead(int map[40][60]);
+	void moveSnakeBody();
+	char* setMaptoList(int map[40][60]);
+	int gateDirection(Vector gate, int map[40][60]);
+	char getDirection();
+	void setEnd(bool e);
+	bool getEnd();
+	int getSpeed();
+	int getRow();
+	int getCol();
+
+	void setGate(int map[40][60]);
+	void removeGate(int map[40][60]);
+	void setGateCnt(int i);
+	int getGateCnt();
+	int getLevel();
+	int getSnakeLen();
+
+	int getSize();
+	void setLevel(int new_level);
+	void minusSnake(WINDOW *win1);
+	void crushItem(WINDOW *win1);
+	position getHead();
+	void resize(int new_size);
+	void changeSnakeLen();
+};

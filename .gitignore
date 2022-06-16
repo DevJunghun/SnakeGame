@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,c++,visualstudiocode
 
 ### snakegame executable file ###
-snakegame
+game
 
 ### C++ ###
 # Prerequisites

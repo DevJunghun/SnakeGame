@@ -47,7 +47,8 @@
 🔸 **Snake**의 몸의 길이가 3보다 작아진다.  
 
 <h2>📌 시연 영상</h2>  
-<img src="https://user-images.githubusercontent.com/28581778/174071165-c6865346-59d1-4060-938a-0d82421f255e.gif"/>
+
+https://user-images.githubusercontent.com/28581778/174078800-c3e9aae8-cce2-4c66-91c3-fb086410ef4f.mp4
 
 
 <h2>📌 팀 소개</h2> 
@@ -109,6 +110,3 @@ make run
 ```
 ./game
 ```
-
-<h2>📌 부록</h2> 
-

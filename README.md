@@ -79,14 +79,14 @@ ex) cd Desktop
 
 2. 다음과 같은 명령어를 입력한다.
 ```
-git clone https://github.com/yellowoov/SnakeGame
+git clone https://github.com/DevJunghun/SnakeGame
 ```
 
 <h3>설치 방법 2 – Download ZIP</h3>  
 
 1. 다음과 같은 주소를 인터넷 브라우저 주소창에 입력한다.
 ```
-https://github.com/yellowoov/SnakeGame/archive/refs/heads/main.zip
+https://github.com/DevJunghun/SnakeGame/archive/refs/heads/main.zip
 ```
 
 2. 다운로드가 완료되면 파일을 게임을 설치하고자 하는 디렉토리에 압축 해제한다.
